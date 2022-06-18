@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Install SQL LITE
+
+sudo apt-get install php-sqlite3
+
+## Add in .env
+
+DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/path/to/database.sqlite
+DB_FOREIGN_KEYS=true
+
+
+## Command to migrate
+
+php artisan migrate
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
